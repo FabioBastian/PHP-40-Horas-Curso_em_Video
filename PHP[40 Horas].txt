@@ -1,0 +1,10 @@
+Aula 1 - historia
+Criado em 1995, por Rasmus Lerdorf, Batizada de Personal Home Page
+passou a se chamar PHP: Hypertext Preprocessor;
+Zeev Suraski e Andi Gutmans - reescreveram o núcleo da ferramenta e a transformou em uma Linguagem de Scripts
+O mascote é um elefante pq PHP parece um elefante
+
+Aula 2
+PHP roda do lado do servidor
+
+Aula 3
