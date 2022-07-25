@@ -4,14 +4,17 @@ passou a se chamar PHP: Hypertext Preprocessor;
 Zeev Suraski e Andi Gutmans - reescreveram o núcleo da ferramenta e a transformou em uma Linguagem de Scripts
 O mascote é um elefante pq PHP parece um elefante
 
+
 Aula 2
 PHP roda do lado do servidor
+
 
 Aula 3
 127.0.0.1 ou localhost
 documentação php - php.net
 
-Aula 4
+
+Aula 4 - variaveis com PHP
 no final do comando sempre por o ;
 variaves sempre declaradas com $
 EX: 
@@ -19,3 +22,120 @@ $idade = 45;
 $sal - 1825.54;
 $nome = "leonardo";
 $casado = false;
+
+usa se o . para cocatenar os bgl na hora de imprimir
+echo("$nome tem $n anos!"); - com aspas duplas funciona
+
+
+Aula 5 - Operadores Aritmeticos
++ - adição 
+- - subtração
+* - multiplicação
+/ - divisão
+% - modulo, resto da divisão
+
+ordem de precedencia
+Primeiro () depois * / % depois + -
+
+INCERÇÃO DE VALORES NO PHP
+
+Direto na URL 
+EX: ?a=3&b=4 - passamos os valores de a e b
+http://127.0.0.1/PHP-40-Horas-Curso_em_Video/aulas_curso/aula05/ex002.php?a=3&b=4
+
+pegando os valores no PHP
+$n1 = $_GET["a"];
+$n2 = $_GET["b"];
+
+
+Funções aritmeticas
+
+abs() - pega o valor absoluto
+EX: 
+$n1 = -3; - o valor é negativo
+.abs($n1); - o seu absoluto é 3 positivo
+
+pow() - elevado a algo
+EX: $n1<sup>$n2</sup>
+$n1 = 4;
+$n2 = 3;
+pow($n1, $n2) - 4 elevado na 3
+
+sqrt() - raiz quadrada
+EX: 
+$n1 = 4;
+sqrt($n1) - retorna 2 que é a raiz quadrada
+
+round() - arredonda o valor (arredondamento foda ksksks) 
+se for 4.5 fica 5, se for 4.4 fica 4.
+ceil - arredonda para cima 
+floor - arredonda para baixo
+EX:
+$n1 = 4.899;
+round($n1) - retorna o valor 5 arredondamento de 4.899
+floor($n1) - retorna o valor 4 arredondamento de 4.899
+ceil($n1) - retorna o valor 5 arredondamento de 4.899
+
+intval() - pega a parte inteira da variavel
+EX:
+$n1 = 4.899.
+intval($n1) - retorna o valor 4 que é a parte inteira de 4.899
+
+number_format() - formatação - talvez em valor monetario
+EX:
+$n1 = 4000.899
+number_format($n2, 2, ",", ".")) - retorna o valor de 4.000,90
+
+
+Aula 6 - Operadores de Atribuição
+
+$a += $b; - adição
+$a -= $b; - subtração
+$a *= $b; - multiplicação
+$a /= $b; - divisão
+$a &= $b; - modulo
+$a .= $b; - concatecação
+
+Operadores de incremento
+Pre-incremento =        ++$a
+Pos-incremento =        $a++
+pre- decremento =       --$a
+pos-decremento =        $a--
+
+Impressão na tela
+$atual = 2022
+echo("O ano anterior é ". --$atual) - vai diminuir na variavel e depois imprimir - imprime(2021)
+echo("O ano anterior é ". $atual--) - vai dimprimir na tela e depois diminuir na variavel - imprime(2022)
+
+COMENTARIOS NO CODIGO - so aparece no codigo fonte
+// esta linha é um comentario
+# esta tambem é um comentario de uma linha
+/*
+comentario multi linha
+*/
+
+variaveis referenciadas - &
+$a = 3;
+$b = &$a;
+$b += 5;
+echo($a); - vai imprimir 8
+echo($b); - tambem vai impimir 8
+
+Variaveis de Variaveis
+$site = "cursoemvideo"
+$$site = "cursoPHP"
+echo($site); - imprime "cursoemvideo"
+echo($cursoemvideo); - imprime "cursoPHP"
+
+
+
+
+
+
+
+
+
+
+
+
+
