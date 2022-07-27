@@ -128,9 +128,83 @@ echo($site); - imprime "cursoemvideo"
 echo($cursoemvideo); - imprime "cursoPHP"
 
 
+Aula 7 - Operadores relacionais
+
+> - maior
+< - menor
+>= - maior ou igual
+<= - menor igual
+<> ou != - deferente
+== - igual
+=== - identico, conteudo igual e do mesmo tipo
+
+Operador Unario
+expressão ? verdadeiro : falso
+EX: 
+$maior = $a>$b ? $a : $b
+
+* Logica
+Se (A > B) então
+	maior <- A
+Senão
+	maior <- B
+FimSe
+
+EX: 
+$r = $a>$b ? $a+$b : $a-$b
+EX: Se a media for menor que 7, a variavel pega o recuperação.
+$sit = $m < 7 ? "recuperação" : "aprovado"
+
+Operadores Logicos
+and ou && - precisa ter duas premissas verdadeiras
+V - V = V
+V - F = F
+F - V = F
+F - F = F
+
+or ou || - precisa ter alguma premissa verdadeira e retorna verdadeiro
+V - V = V
+V - F = V
+F - V = V
+F - F = F
+
+xor - so da verdadeiro quando uma premissa for verdadeiro, não as duas 
+V - V = F
+V - F = V
+F - V = V
+F - F = F
+
+! - não 
+V se torna F
+F se torna V
 
 
+Aula 8 - formulario de usuario
+EX: - HTML
+<form method= "get OU post" action="dados.php">
+	valor: <input type="text" name="v" />
+	input type="submit" value="Calcular" />
+</form>
 
+EX: - PHP
+<?php
+$valor = $_GET["v"];
+echo("Digitou $v");
+?>
+
+GET E POST
+
+EX: - HTML
+<form method="get"> - deve se utilizar get no script do PHP
+
+<form method="post"> - deve se utilizar post no script do PHP
+
+EX: - PHP
+<?php
+$v = $_GET["n"]; - se no form do html estiver "get"
+
+$v = $_POST["n"]; - se no form do html estiver "post"
+?>
 
 
 
