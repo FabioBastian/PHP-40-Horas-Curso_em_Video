@@ -12,8 +12,12 @@
         <h2>Ano nascimento: <input type="number" name="ano"></h2>
         <fieldset>
             <legend>Sexo: </legend>
-            
+            <input type="radio" name="sexo" id="masc" value="homem">
+            <label for="masc">Masculino</label>
+            <input type="radio" name="sexo" id="fem" value="mulher">
+            <label for="fem">Feminino</label>
         </fieldset>
+        <input type="submit" value="Enviar">
     </form>
 </body>
 </html>

@@ -207,6 +207,11 @@ $v = $_POST["n"]; - se no form do html estiver "post"
 ?>
 
 
+Aula 8
+date() - para pegar a data atual
+date("Y") - para pegar o ano completo
+
+
 
 
 
