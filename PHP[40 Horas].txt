@@ -99,7 +99,7 @@ $a .= $b; - concatecação
 Operadores de incremento
 Pre-incremento =        ++$a
 Pos-incremento =        $a++
-pre- decremento =       --$a
+pre-decremento =       --$a
 pos-decremento =        $a--
 
 Impressão na tela
@@ -134,7 +134,7 @@ Aula 7 - Operadores relacionais
 < - menor
 >= - maior ou igual
 <= - menor igual
-<> ou != - deferente
+<> ou != - diferente
 == - igual
 === - identico, conteudo igual e do mesmo tipo
 

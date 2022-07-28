@@ -8,8 +8,8 @@
 </head>
 <body>
     <form method="get" action="02idade.php">
-        <h2>Nome: <input type="text" name="nome"></h2>
-        <h2>Ano nascimento: <input type="number" name="ano"></h2>
+        <label>Nome: <input type="text" name="nome"></label>
+        <label>Ano nascimento: <input type="number" name="ano"></label>
         <fieldset>
             <legend>Sexo: </legend>
             <input type="radio" name="sexo" id="masc" value="homem">

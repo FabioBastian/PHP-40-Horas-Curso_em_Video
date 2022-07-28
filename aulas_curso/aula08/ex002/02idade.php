@@ -8,10 +8,10 @@
 </head>
 <body>
     <?php
-    $nome = $_GET["nome"] != null ? $_GET["nome"] : "[Não informado]";
-    $ano = " " ? $_GET["ano"] : 0;
+    $nome = !empty($_GET["nome"]) ? $_GET["nome"] : "[Não informado]";
+    $ano = !empty($_GET["ano"]) ? $_GET["ano"] : 0;
     $sexo = isset($_GET["sexo"]) ? $_GET["sexo"] : "[sexo não informado]";
-    $idade = date("Y");
+    $idade = date("Y") - $ano;
     echo("$nome um $sexo de $idade anos.");
     ?>
     <h2><a href="index.php">Voltar</a></h2>
