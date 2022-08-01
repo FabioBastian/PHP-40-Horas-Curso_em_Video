@@ -210,6 +210,62 @@ $v = $_POST["n"]; - se no form do html estiver "post"
 Aula 8
 date() - para pegar a data atual
 date("Y") - para pegar o ano completo
+EX: 
+$txt = !empty($_GET["t"]) ? $_GET["t"] : "[Texto generico]";
+
+EX: mudar as coisa no CSS
+<style>
+        span.texto {
+            font-size: <?php echo $tam; ?>;
+            color: <?php echo $cor ?>;
+        }
+    </style>
+</head>
+<?php
+    echo("<span class='texto'>$txt</span><br>");
+    ?>
+    <a href="index.php">Voltar</a>
+</body>
+
+
+Aula 9 - condições em PHP
+
+if (condição){
+		
+}else{
+
+}
+
+EX: 
+$maior = $a>b ? $a : $b; - operador ternario
+
+OU
+
+if($a > $b) {
+	$maior = $a;
+}else {
+	$maior = $b;	
+}
+
+EX: 
+else if (condição){
+        codigo
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
