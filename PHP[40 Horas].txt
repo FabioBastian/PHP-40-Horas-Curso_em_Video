@@ -253,10 +253,53 @@ else if (condição){
     }
 
 
+Aula 10 - Estrutura Condicional - Switch
+escolha (op) {
+	Caso 1
+		Escreva("A")
+	Caso 2
+		Escreva("B")
+	OutroCaso
+		Escreva("Erro")
+	Fim escolha
 
+EX: 
+switch(#op){
+	case 1:
+		echo("A");
+		break;
+	case 2:
+		echo("B");
+		break;
+	defeaut:
+		echo("Erro");
+}
 
+Condiçoes de multiplos casos
+Escolha (op) {
+	caso 1, 2, 3:
+		Escreva("Tipo 1")
+	Caso 4, 5:
+		Escreva("Tipo 2")
+	OutroCaso:
+		Escreva("Tipo 3")
+	FimEscolha
+}
 
-
+EX: 
+swith ($op) {
+	case 1:
+	case 2:
+	case 3:
+		echo("Tipo");
+		break;
+	case 4:
+	case 5:
+		echo("Tipo 2")
+		break;
+	default:
+		echo("Tipo 3");
+}
 
 
 
