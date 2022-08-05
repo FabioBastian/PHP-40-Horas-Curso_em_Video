@@ -9,9 +9,13 @@
 <body>
     <?php
     $i = 1;
-    while ($i <= 5) {
-        $v = "num".$i;
+    $n = 0;
+    while ($i <= 500) {
+        $n += !empty($_POST["v".$i]) ? $_POST["v".$i] : 0;
+        $i++;
+
     }
+    echo("A soma é $n");
     ?>
 </body>
 </html>
