@@ -331,6 +331,33 @@ while ($c <= 5) {
 }
 ?>
 
+Modificando o Laço
+
+EX: - Utilizando Break; ou continue;
+$c = 1/
+while ($c <= 1000) {
+	echo("teste");
+	if ($c == 45){
+		break; - quando chegar nesse break para a execução
+	}
+	echo("teste");
+	else if ($c = 500) {
+		continue; - volta para o while e não executa o codigo a baixo
+	}
+	c++
+}
+
+
+
+criar um contador personalizavel
+inicio: input number
+final - input number
+incremento - option 1 até 10
+
+o preograma deve saber contar de tras para a frente tambem
+
+
+
 
 
 

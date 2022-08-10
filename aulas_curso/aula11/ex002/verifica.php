@@ -10,7 +10,7 @@
     <?php
     $i = 1;
     $n = 0;
-    while ($i <= 500) {
+    while ($i <= 5) {
         $n += !empty($_POST["v".$i]) ? $_POST["v".$i] : 0;
         $i++;
 

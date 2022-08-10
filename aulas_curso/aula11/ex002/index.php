@@ -10,7 +10,7 @@
     <form method="post" action="verifica.php">
         <?php
         $c = 1;
-        while ($c <= 500) {
+        while ($c <= 5) {
             echo("<label for='valor$c'>Valor $c: <input type='number' name='v$c' id='valor$c' min='0' max='100'></label><br>");
             $c ++;
         }
